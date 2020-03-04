@@ -1,1 +1,1 @@
-[{"title":"Hello World","date":"2020.03.04","uri":"2020/03/04/hello-world/","excerpt":""},{"title":"test","date":"2020.03.04","uri":"2020/03/04/test/","excerpt":""}]
+[{"title":"Hello World","date":"2020.03.04","uri":"2020/03/04/hello-world/","excerpt":""},{"title":"test","date":"2020.03.04","uri":"2020/03/04/test/","excerpt":""},{"title":"非得这样发文吗“\n\nhexo new post 非得这样发文吗，身心俱疲“","date":"2020.03.04","uri":"2020/03/04/非得这样发文吗“-hexo-new-post-非得这样发文吗，身心俱疲“/","excerpt":""}]
