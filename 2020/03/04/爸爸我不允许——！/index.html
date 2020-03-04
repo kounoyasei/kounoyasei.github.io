@@ -3,13 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title></title>
+  <title>爸爸我不允许——！ | </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="VOLERE 渴望 摘要： “好吧，”米斯达清了清嗓子，用手罩住自己的嘴，压低声音说，“我觉得我可能积压太多了。你知道的，比如，”米斯达不置可否地耸了耸肩，这让乔鲁诺抬起了一边眉毛。“我一直在想一些我完全不该想的事情。” （米斯达一直对乔鲁诺怀有冲动，并认为对方从未察觉。） 第一章 米斯达的思想总是很简单。他早上起床时的第一个想法很少会和睡前的最后一个想法不同，而最近则充斥着乔鲁诺丝质的衣服勾勒出">
+<meta property="og:type" content="article">
+<meta property="og:title" content="爸爸我不允许——！">
+<meta property="og:url" content="http://yoursite.com/2020/03/04/%E7%88%B8%E7%88%B8%E6%88%91%E4%B8%8D%E5%85%81%E8%AE%B8%E2%80%94%E2%80%94%EF%BC%81/index.html">
 <meta property="og:site_name">
+<meta property="og:description" content="VOLERE 渴望 摘要： “好吧，”米斯达清了清嗓子，用手罩住自己的嘴，压低声音说，“我觉得我可能积压太多了。你知道的，比如，”米斯达不置可否地耸了耸肩，这让乔鲁诺抬起了一边眉毛。“我一直在想一些我完全不该想的事情。” （米斯达一直对乔鲁诺怀有冲动，并认为对方从未察觉。） 第一章 米斯达的思想总是很简单。他早上起床时的第一个想法很少会和睡前的最后一个想法不同，而最近则充斥着乔鲁诺丝质的衣服勾勒出">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-03-04T15:03:42.000Z">
+<meta property="article:modified_time" content="2020-03-04T15:04:39.012Z">
 <meta property="article:author" content="野生荒野">
 <meta name="twitter:card" content="summary">
   
@@ -66,9 +70,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-爸爸我不允许——！" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-爸爸我不允许——！" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/03/04/%E7%88%B8%E7%88%B8%E6%88%91%E4%B8%8D%E5%85%81%E8%AE%B8%E2%80%94%E2%80%94%EF%BC%81/" class="article-date">
   <time datetime="2020-03-04T15:03:42.000Z" itemprop="datePublished">2020-03-04</time>
@@ -81,8 +83,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/04/%E7%88%B8%E7%88%B8%E6%88%91%E4%B8%8D%E5%85%81%E8%AE%B8%E2%80%94%E2%80%94%EF%BC%81/">爸爸我不允许——！</a>
+    <h1 class="article-title" itemprop="name">
+      爸爸我不允许——！
     </h1>
   
 
@@ -238,106 +240,76 @@
     </footer>
   </div>
   
-</article>
+    
  
+<script src="/jquery/jquery.min.js"></script>
 
-
-  
-    <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/04/test/" class="article-date">
-  <time datetime="2020-03-04T12:37:12.000Z" itemprop="datePublished">2020-03-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/04/test/">test</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- Table of Contents -->
-        
-        <p>我 试试这个可不可以用来编辑</p>
-<p><strong>试试</strong></p>
-<p><em>斜体看看</em></p>
-
-      
+  <div id="random_posts">
+    <h2>Recommended Posts</h2>
+    <div class="random_posts_ul">
+      <script>
+          var random_count =4
+          var site = {BASE_URI:'/'};
+          function load_random_posts(obj) {
+              var arr=site.posts;
+              if (!obj) return;
+              // var count = $(obj).attr('data-count') || 6;
+              for (var i, tmp, n = arr.length; n; i = Math.floor(Math.random() * n), tmp = arr[--n], arr[n] = arr[i], arr[i] = tmp);
+              arr = arr.slice(0, random_count);
+              var html = '<ul>';
+            
+              for(var j=0;j<arr.length;j++){
+                var item=arr[j];
+                html += '<li><strong>' + 
+                item.date + ':&nbsp;&nbsp;<a href="' + (site.BASE_URI+item.uri) + '">' + 
+                (item.title || item.uri) + '</a></strong>';
+                if(item.excerpt){
+                  html +='<div class="post-excerpt">'+item.excerpt+'</div>';
+                }
+                html +='</li>';
+                
+              }
+              $(obj).html(html + '</ul>');
+          }
+          $('.random_posts_ul').each(function () {
+              var c = this;
+              if (!site.posts || !site.posts.length){
+                  $.getJSON(site.BASE_URI + 'js/posts.js',function(json){site.posts = json;load_random_posts(c)});
+              } 
+               else{
+                load_random_posts(c);
+              }
+          });
+      </script>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/04/test/" data-id="ck7dbbe6a0000nkv0a18b3cvo" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
   </div>
+
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/03/04/test/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">test</div>
+    </a>
+  
+</nav>
+
   
 </article>
  
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/04/hello-world/" class="article-date">
-  <time datetime="2020-03-04T09:50:06.256Z" itemprop="datePublished">2020-03-04</time>
-</a>
+     
+  <div class="comments" id="comments">
     
+     
+       
+      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+    
+       
+      
+      
   </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/04/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- Table of Contents -->
-        
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/04/hello-world/" data-id="ck7d8749l0000ywv0h5rafkx3" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
  
-
-
   
 
 </section>
@@ -345,22 +317,6 @@
     <aside id="sidebar">
   
     
-  <div class="widget-wrap">
-     
-        <h3 class="follow-title ">Follow me</h3>
-     
-    <div class="widget follow">
-      
-      
-            <a class="weibo" aria-hidden="true"  href="https://weibo.com/1919788450/profile?topnav=1&amp;wvr=6" target="_blank" title="微博"></a>
-      
-      
-      
-            <a class="email" aria-hidden="true"  href="mailto:273281450@qq.com" target="_blank" title="邮箱"></a>
-      
-    </div>
-  </div>
-
 
   
     
@@ -394,37 +350,9 @@
 
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title archive">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a><span class="archive-list-count">3</span></li></ul>
-    </div>
-  </div>
-
 
   
     
-<div class="widget-wrap">
-    <h3 class="widget-title">Links</h3>
-    <div class="widget">
-        <ul>
-            
-            <li>
-                <a href="https://everlastingamanrath.lofter.com/" target="_blank" rel="noopener">野生荒野的LOFTER</a>
-            </li>
-            
-            <li>
-                <a href="https://archiveofourown.org/users/huangyeer/pseuds/huangyeer" target="_blank" rel="noopener">AO3</a>
-            </li>
-            
-            <li>
-                <a href="https://mauvestingers.github.io/" target="_blank" rel="noopener">吃风筝的树</a>
-            </li>
-            
-        </ul>
-    </div>
-</div>
-
   
     <!--微信公众号二维码-->
 
